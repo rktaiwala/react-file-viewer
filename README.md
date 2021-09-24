@@ -47,7 +47,7 @@ To use a custom error component, you might do the following:
 // MyApp.js
 import React, { Component } from 'react';
 import logger from 'logging-library';
-import FileViewer from 'react-file-viewer';
+import FileViewer from '@rktaiwala/react-file-viewer';
 import { CustomErrorComponent } from 'custom-error';
 
 const file = 'http://example.com/image.png'
