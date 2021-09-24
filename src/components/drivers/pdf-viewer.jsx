@@ -21,7 +21,7 @@ function PDFDriver(props) {
         file={props.filePath}
         onLoadSuccess={onDocumentLoadSuccess}
       >
-        <Page pageNumber={pageNumber} />
+        <Page pageNumber={pageNumber} width={props.width} />
       </Document>
       <p>Page {pageNumber} of {numPages}</p>
     </div>
