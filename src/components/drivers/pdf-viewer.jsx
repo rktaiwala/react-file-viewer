@@ -5,7 +5,7 @@ import React, {useState} from 'react';
 
 import { Document, Page } from 'react-pdf';
 import { pdfjs } from 'react-pdf';
-//pdfjs.GlobalWorkerOptions.workerSrc = '../node_modules/pdfjs-dist/build/pdf.worker.min.js';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function PDFDriver(props) {
   const [numPages, setNumPages] = useState(null);
