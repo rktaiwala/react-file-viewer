@@ -27,8 +27,8 @@ class FileViewer extends Component {
 
   componentDidMount() {
     const container = document.getElementById('pg-viewer');
-    const height = container ? container.clientHeight : 0;
-    const width = container ? container.clientWidth : 0;
+    const height = (this.props.hasOwnProperty('height') && this.props.height) ? this.props.height : container ? container.clientHeight : 0;
+    const width = (this.props.hasOwnProperty('width') && this.props.width) ? this.props.width :container ? container.clientWidth : 0;
     this.setState({ height, width });
   }
 
