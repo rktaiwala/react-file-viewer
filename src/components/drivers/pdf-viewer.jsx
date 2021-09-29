@@ -13,6 +13,8 @@ function PDFDriver(props) {
 
   function onDocumentLoadSuccess({ numPages }) {
     setNumPages(numPages);
+    if(!props.onLoadSuccess) return
+    props.onLoadSuccess();
   }
 
   return (

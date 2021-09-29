@@ -32,6 +32,7 @@ class FileViewer extends Component {
     this.setState({ height, width });
   }
 
+  
   getDriver() {
     switch (this.props.fileType) {
       case 'csv': {
